@@ -24,8 +24,17 @@
 
     <distributionManagement>
         <repository>
-            <id>dropbox-mvn-repo</id>
-            <url>file:///C:/Users/accas/Dropbox/Public/mvn</url>
+            <id>danu6-mvn-repo</id>
+            <url>sftp://danu_os2@danu6.it.nuigalway.ie/14336256/mvn/</url>
         </repository>
     </distributionManagement>
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+            </extension>
+        </extensions>
+    </build>
+
 </project>

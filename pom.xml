@@ -25,7 +25,7 @@
     <distributionManagement>
         <repository>
             <id>danu6-mvn-repo</id>
-            <url>file:///C:/Users/Seán/Documents/SynchronisedDanuFolder/mvn</url>
+            <url>sftp://danu_os2@danu6.it.nuigalway.ie/14336256/mvn/</url>
         </repository>
     </distributionManagement>
     <build>
@@ -33,7 +33,6 @@
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
                 <artifactId>wagon-ssh</artifactId>
-                <version>2.3</version>
             </extension>
         </extensions>
     </build>
